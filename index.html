@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="balloons">
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+  <div class="balloon"></div>
+</div>
+
+
+  <div class="container">
+    <h1>🎉 Happy Birthday, Kitkat 🎂</h1>
+   
+    <p class="message">Wishing you endless happiness, laughter, and love today and always 🥳💖</p><br><br>
+    <h2><br> I am blessed to have a person like you in my life 🩷<br> Entha irritate chesina same bond maintain chestu alaney unav🫂.<br>Teliyakunda ney na present life lo chala important person ipoyav.<br>
+         Ni valaney naku manchi friends dorikaru👭.<br> Nenu una koni hard situations lo, avarini namodhu aney time lo parichyam iyav<br> and friendship ki oka meaning teluskuney la chesav.<br> Ni tho time spend cheyadam, ee chinna vishyam ina share cheskovadam ante istam and namakam.<br> Nuv elaney undu chaluu.<br>
+        Apudu em kaval ana I'll be there for you forever. <br> Nenu apudu neku etla express cheyaledu enduku ante nakey sodi anipistadi😂<br> kani nekuda teliyali ani chepthuna 😌<br>Once again Happy Birthday Strangerrr🤭🥳✨
+    </h2>
+    
+  </div>
+  <section> 
+    <br>
+    <br>
+    <br>
+    <br>
+  </section>
+  <section id="cake">
+  <div class="cake-container">
+    <img src="cake.png" alt="Birthday Cake" class="cake">
+    <p class="cake-text">🎂 Happy Birthday <BR>My Fav Hoooooman🎂</p>
+  </div>
+</section>
+
+
+  <!-- New Photo Section -->
+  <section class="gallery">
+   <h1>Memories Together💕</h1>
+    <div class="photo-boxes">
+      <div class="box" onclick="openModal(1)">
+        <img src="1.jpg" alt="Memory 1">
+       <!---- <p>Unforgettable moments ✨ </p>--->
+      </div>
+      <div class="box" onclick="openModal(2)">
+        <img src="2.jpg" alt="Memory 2">
+       <!--/* <p>The Best Support Ever 💙</p>*/-->
+      </div>
+      <div class="box" onclick="openModal(3)">
+        <img src="3.jpg" alt="Memory 3">
+      <!--- /* <p>More memories ahead 🥂</p>*/--->
+      </div>
+    </div>
+  </section>
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(1)">&times;</span>
+      <h2>Unforgettable Memories</h2>
+     <p>Moments that bring us endless joy,Stories we’ll cherish forever.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(2)">&times;</span>
+      <h2>The Best Supporter Ever 🌍</h2>
+      <p>My Constant Strength and true companion🤝.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(3)">&times;</span>
+      <h2>Cheers to the Future 🥂</h2>
+      <p>No matter where life takes us, I know we’ll keep creating amazing memories together. The best is yet to come.🎉💖</p>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+<script>
+const balloons = document.querySelectorAll('.balloon');
+
+balloons.forEach(balloon => {
+  
+  balloon.style.left = Math.random() * 100 + 'vw';
+  
+  let size = 30 + Math.random() * 40;
+  balloon.style.width = size + 'px';
+  balloon.style.height = (size * 1.5) + 'px';
+  balloon.style.setProperty('--x', (Math.random() * 100 - 50) + 'px');
+  balloon.style.animationDuration = (5 + Math.random() * 7) + 's';
+
+  balloon.style.animationDelay = Math.random() * 5 + 's';
+});
+</script>
+
+<footer>
+  <p class="from-friend">🎉 From Dettol, Lady don😈💖</p>
+</footer>
+
+</body>
+</html>
